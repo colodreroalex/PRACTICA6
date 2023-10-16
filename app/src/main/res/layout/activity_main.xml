@@ -62,7 +62,7 @@
         android:id="@+id/star"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MaterialAlertDialog.Material3"
         android:layout_marginTop="220dp"
         android:layout_marginEnd="24dp"
         android:Tint="#FFFFFF"

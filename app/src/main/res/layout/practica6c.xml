@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/banner1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/transformers" />
+
+    <ImageView
+        android:id="@+id/banner2"
+        android:layout_width="130dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/banner1"
+        app:srcCompat="@drawable/transformers_cartel" />
+
+    <TextView
+        android:id="@+id/descrip"
+        android:layout_width="191dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="Transformer: el
+         despertar de las bestias"
+        android:textAlignment="center"
+        android:textSize="45px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner1" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@+id/descrip"
+        app:layout_constraintTop_toBottomOf="@+id/banner1"
+        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+    <Button
+        android:id="@+id/alquilarB"
+        android:layout_width="196dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:text="ALQUILAR"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner2" />
+
+    <Button
+        android:id="@+id/comprarB"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="42dp"
+        android:text="COMPRAR"
+        app:layout_constraintStart_toEndOf="@+id/alquilarB"
+        app:layout_constraintTop_toBottomOf="@+id/descrip"
+        android:backgroundTint="@color/black"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF0000"
+        android:clickable="true"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alquilarB"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MaterialAlertDialog.Material3"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+        app:layout_constraintTop_toBottomOf="@+id/alquilarB"
+        app:srcCompat="@drawable/ic_family"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MaterialAlertDialog.Material3"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton4"
+        app:layout_constraintTop_toBottomOf="@+id/comprarB"
+        app:srcCompat="@drawable/tomato"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MaterialAlertDialog.Material3"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#1DBC0B"
+        android:clickable="true"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.MaterialAlertDialog.Material3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comprarB"
+        app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="309dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="175dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="115dp"
+        android:text="Descripcion de la pelicula
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
