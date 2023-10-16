@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="80dp"
+        android:layout_height="16dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="168dp"
+        android:text="699500600"
+        app:layout_constraintEnd_toStartOf="@+id/sms2"
+        app:layout_constraintTop_toBottomOf="@+id/movilText1" />
+
+    <TextView
+        android:id="@+id/movilText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="212dp"
+        android:contentDescription="texto que pone movil2"
+        android:hint="Movil"
+        app:layout_constraintEnd_toStartOf="@+id/sms2"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <View
+        android:id="@+id/barrita"
+        android:layout_width="315dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/correoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movilText2"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <ImageView
+        android:id="@+id/androidImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="-475dp"
+
+        android:adjustViewBounds="false"
+        android:contentDescription="Imagen de android"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/background_1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="24dp"
+        android:Tint="#FFFFFF"
+        android:backgroundTint="#F279FF"
+        android:clickable="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_star" />
+
+    <ImageView
+        android:id="@+id/tlf_img"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/num1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/androidImg"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="80dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="687100200"
+
+        app:layout_constraintBottom_toBottomOf="@+id/sms1"
+        app:layout_constraintLeft_toRightOf="@id/num1" />
+
+    <ImageView
+        android:id="@+id/sms1"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/num1"
+        app:layout_constraintTop_toBottomOf="@+id/androidImg"
+        app:layout_constraintVertical_bias="0.506"
+        app:srcCompat="@drawable/ic_sms" />
+
+    <TextView
+        android:id="@+id/movilText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="Movil"
+        app:layout_constraintStart_toEndOf="@+id/tlf_img"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <ImageView
+        android:id="@+id/sms2"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
+        android:contentDescription="segunda imagen de sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrita"
+        app:srcCompat="@drawable/ic_sms" />
+
+    <TextView
+        android:id="@+id/mailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imgCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/correoText" />
+
+    <ImageView
+        android:id="@+id/imgCorreo"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrita"
+        app:srcCompat="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/correoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+
+        android:layout_marginRight="-125dp"
+        android:text="info@gmail.com
+"
+        app:layout_constraintRight_toRightOf="@id/imgCorreo"
+        app:layout_constraintTop_toBottomOf="@id/barrita" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
